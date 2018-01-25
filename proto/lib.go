@@ -273,12 +273,6 @@ import (
 	"sync"
 )
 
-// Proto3UnknownFields enables whether unknown fields are preserved when
-// unmarshaling proto3 messages. By default, this is disabled.
-// This variable should only be set at init time.
-// This variable is temporary and will go away soon. Do not rely on it.
-var Proto3UnknownFields = false
-
 // Message is implemented by generated protocol buffer messages.
 type Message interface {
 	Reset()
